@@ -38,11 +38,22 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     """ Here's all the messages will be handled and processed by the program """
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=event.message.text))
-
-
+    
+    msg = (event.message.text).lower()
+    
+    if 'hello' in msg:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="hello user"))
+    elif 'apa kabar' in msg:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="im doing good"))
+    else:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=event.message.text))
+    #fungsi apakabar dan hello test
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
