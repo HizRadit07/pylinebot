@@ -52,7 +52,7 @@ def handle_message(event):
     elif '1' in msg:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="1.	Nama tempat fotokopi	: Rindu Dago Digital Printing & Copier"                                 
+            TextSendMessage(text="1.	Nama tempat fotokopi	: Rindu Dago Digital Printing & Copier"))                               
     else:
         line_bot_api.reply_message(
             event.reply_token,
