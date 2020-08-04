@@ -44,7 +44,7 @@ def handle_message(event):
     if 'hello' in msg:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="hello user"))
+            TextSendMessage(text="hello user\nchatbot here"))
     elif 'apa kabar' in msg:
         line_bot_api.reply_message(
             event.reply_token, 
