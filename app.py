@@ -55,6 +55,38 @@ def handle_message(event):
             TextSendMessage(text="test ready, greetings Dαybreak-"))
     #easter egg functions, lol
     #dalam ITB messages
+    elif ('1' in msg) or ('GKUB' in msg) or ('gkub' in msg) or ('Gkub' in msg):
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(text="List tempat fotokopi di GKUB\n\n1. GKUB LT 1\nJUAL LENGKAP\njam operasional: 9.00-16.00\n\n2. GKUB LT 1\nJUAL LENGKAP\nJam operasional: 09.00-17.00"))
+    elif ('2' in msg) or ('Labtek 5' in msg) or ('Labtek V' in msg) or ('LABTEK 5' in msg) or ('LABTEK V' in msg):
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(text="List tempat fotokopi di Labtek V\n\n1. LABTEK V LT 1 (DEKAT SEKRE HMIF 1)\nHANYA FOTOKOPI PRINT\nJam operasional: 09.00-15.00"))
+    elif ('3' in msg) or ('GKUT' in msg) or ('Gkut' in msg) or ('gkut' in msg):
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(text="List tempat fotokopi di GKUT\n\n1. GKUT LT 1\nJUAL LENGKAP\nJam operasional: 09.00 - 15.00"))
+    elif ('4' in msg) or ('Labtek 8' in msg) or ('Labtek VIII' in msg) or ('LABTEK 8' in msg) or ('LABTEK VIII' in msg):
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(text="List tempat fotokopi di LABTEK VIII\n\n1. LABTEK VIII LT BASEMENT\nHANYA FOTOKOPI, PRINT\nJam operasional: 09.00-15.00"))
+    elif ('5' in msg) or ('Labtek biru' in msg) or ('labtek biru' in msg):
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="List tempat fotokopi di Labtek biru\n\n1. LABTEK BIRU LT 1\nJUAL LENGKAP\nJam operasional: 09.00-16.00"))
+    elif ('6' in msg) or ('sbm' in msg) or ('SBM' in msg) or ('Sbm' in msg):
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="List tempat fotokopi di SBM\n\n1. SBM LT 2\nJUAL LENGKAP\nJam operasional: 09.00-15.00"))
+    elif ('7' in msg) or ('ITB Press' in msg) or ('Itb press' in msg) or ('itb press' in msg):
+         line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="List tempat fotokopi di ITB Press\n\n1. ITB Press (Di belakang perpustakaan)\nHanya Fotokopi\nJam operasional: 09.00-17.00\nLink google maps: https://goo.gl/maps/mVAZPxmtv5sXtdGF7"))
+    elif ('8' in msg) or ('PAU' in msg) or ('pau' in msg) or ('Pau' in msg) or ('Gedung PAU' in msg) or ('gedung PAU' in msg) or ('Gedung pau' in msg) or ('gedung pau' in msg):
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="List tempat fotokopi di Gedung PAU\n\n1. GEDUNG PAU LT 1 (BAGIAN DEPAN)\nHANYA FOTOKOPI,PRINT\nJam operasional: 09.00-15.00"))
     #luar ITB messages
     elif '9' in msg:
         line_bot_api.reply_message(
