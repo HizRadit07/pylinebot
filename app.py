@@ -47,12 +47,15 @@ def handle_message(event):
             TextSendMessage(text="hello user"))
     elif 'apa kabar' in msg:
         line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text="im doing good"))
+            event.reply_token, [
+            TextSendMessage(text="im doing good")
+            TextSendMessage(text="how about you")])
     elif '1' in msg:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="1.	Nama tempat fotokopi	: Rindu Dago Digital Printing & Copier"))                               
+            TextSendMessage(text='1.	Nama tempat fotokopi	: Rindu Dago Digital Printing & Copier '))
+
+                                                                                                                                   
     else:
         line_bot_api.reply_message(
             event.reply_token,
