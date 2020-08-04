@@ -56,7 +56,7 @@ def handle_message(event):
     #easter egg functions, lol
     #dalam ITB messages
     #luar ITB messages
-    elif '9' or 'Cisitu' or 'cisitu' in msg:
+    elif '9' in msg:
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="List tempat fotokopi di daerah Cisitu\n\n1.	Nama tempat fotokopi	: Alifia Fotocopy & Digital Printing\nNama Jalan		: Jalan Cisitu Lama No 42 Dago, Kecamatan Coblong,Bandung,Jawa Barat\nYang dijual		: Jasa Fotocopy,printing, ATK, laminating,jilid\nJam operasi		: \nSenin - Sabtu : 07.00 – 22.00\nMinggu : 10.00 – 22.00\nLink Gmaps		: https://goo.gl/maps/pJFHVczpXbnNsEYp6"))
