@@ -45,22 +45,18 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="hello user\nchatbot here"))
-        if 'bonjour' in msg:
-            line_bot_api.reply_message(
-                event.reply_token,
-                TextSendMessage(text="is there anything you want me to do?"))
     elif 'apa kabar' in msg:
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="baik kok hehe"))
-    elif '1' in msg:
+    elif 'test' in msg:
         line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='1.	Nama tempat fotokopi	: Rindu Dago Digital Printing\nAlamat			: Jl. Tubagus Ismail Raya No.1, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132    Yang dijual		: Jasa fotokopi, print foto,print laser, ID Card, ATK, hard cover, soft cover, jilid ring, laminating\nJam operasi		: 24 Jam\nLink google maps	: https://www.google.com/maps/dir//fotokopi+tubagus+ismail/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e68e6f924ae1f07:0x2702d20bd94addf3?sa=X&ved=2ahUKEwiewJ7dgv7qAhUQU30KHT_5CW8Q9RcwAHoECAYQCg'))                         
+            event.reply_token, 
+            TextSendMessage(text="test ready, greetings Dαybreak-"))
     else:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text=event.message.text))
+            TextSendMessage(text="Mohon maaf, message belum dapat dimengerti\nSilakan masukan angka atau nama sesuai pilihan dibawah ini\n\nDalam ITB\n1.GKUB\n2.Labtek 5\n3.GKUT\n4.Labtek 8\n5.Labtek biru\n6.SBM\n7. ITB Press\n8. Gedung PAU\n\nLuar ITB\n9.Cisitu\n10.Dipatiukur(DU)\n11.Tubagus Ismail (Tubis)\n\nterimakasih sudah menggunakan layanan chatbot ini"))
     #fungsi apakabar dan hello test
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
