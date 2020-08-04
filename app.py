@@ -49,7 +49,9 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, [
             TextSendMessage(text="im doing good")
-            TextSendMessage(text="how about you")])
+            TextSendMessage(text="how about you")
+            ]
+        )
     elif '1' in msg:
         line_bot_api.reply_message(
             event.reply_token,
