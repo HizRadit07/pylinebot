@@ -52,7 +52,7 @@ def handle_message(event):
     elif '1' in msg:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='1.	Nama tempat fotokopi	: Rindu Dago Digital Printing   Alamat			: Jl. Tubagus Ismail Raya No.1, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132    Yang dijual		: Jasa fotokopi, print foto,print laser, ID Card, ATK, hard cover, soft cover, jilid ring, laminating   Jam operasi		: 24 Jam    Link google maps	: https://www.google.com/maps/dir//fotokopi+tubagus+ismail/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e68e6f924ae1f07:0x2702d20bd94addf3?sa=X&ved=2ahUKEwiewJ7dgv7qAhUQU30KHT_5CW8Q9RcwAHoECAYQCg'))                         
+            TextSendMessage(text='1.	Nama tempat fotokopi	: Rindu Dago Digital Printing\nAlamat			: Jl. Tubagus Ismail Raya No.1, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132    Yang dijual		: Jasa fotokopi, print foto,print laser, ID Card, ATK, hard cover, soft cover, jilid ring, laminating\nJam operasi		: 24 Jam\nLink google maps	: https://www.google.com/maps/dir//fotokopi+tubagus+ismail/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e68e6f924ae1f07:0x2702d20bd94addf3?sa=X&ved=2ahUKEwiewJ7dgv7qAhUQU30KHT_5CW8Q9RcwAHoECAYQCg'))                         
     else:
         line_bot_api.reply_message(
             event.reply_token,
