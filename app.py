@@ -40,20 +40,12 @@ def handle_message(event):
     """ Here's all the messages will be handled and processed by the program """
     
     msg = (event.message.text).lower()
-    if (msg=='Labtek VIII') or (msg=='LABTEK VIII'):
-        line_bot_api.reply_message(
-           event.reply_token, 
-           TextSendMessage(text="List tempat fotokopi di LABTEK VIII\n\n1. LABTEK VIII LT BASEMENT\nHANYA FOTOKOPI, PRINT\nJam operasional: 09.00-15.00"))
-    elif (msg=='Labtek V') or (msg=='LABTEK V'):
-        line_bot_api.reply_message(
-            event.reply_token, 
-            TextSendMessage(text="List tempat fotokopi di Labtek V\n\n1. LABTEK V LT 1 (DEKAT SEKRE HMIF 1)\nHANYA FOTOKOPI PRINT\nJam operasional: 09.00-15.00"))
-        
     
     if 'hello' in msg:
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="hello user\nchatbot here"))
+            print(msg)
     elif ('apa kabar' in msg) or ('gimana kabarnya' in msg):
         line_bot_api.reply_message(
             event.reply_token, 
