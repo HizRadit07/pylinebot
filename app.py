@@ -103,7 +103,7 @@ def handle_message(event):
     else:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Mohon maaf, message belum dapat dimengerti\nSilakan masukan angka atau nama sesuai pilihan dibawah ini\n\nDalam ITB\n1. GKUB\n2. Labtek 5\n3. GKUT\n4. Labtek 8\n5. Labtek biru\n6. SBM\n7. ITB Press\n8. Gedung PAU\n\nLuar ITB\n9. Cisitu\n10. Dipatiukur(DU)\n11. Tubagus Ismail (Tubis)\n\nTerimakasih sudah menggunakan layanan chatbot ini"))
+            TextSendMessage(text="Mohon maaf, message belum dapat dimengerti\nSilakan masukan nama sesuai pilihan dibawah ini\n\nDalam ITB\n1. GKUB\n2. Labtek 5\n3. GKUT\n4. Labtek 8\n5. Labtek biru\n6. SBM\n7. ITB Press\n8. Gedung PAU\n\nLuar ITB\n9. Cisitu\n10. Dipatiukur(DU)\n11. Tubagus Ismail (Tubis)\n\nTerimakasih sudah menggunakan layanan chatbot ini"))
     
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
