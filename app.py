@@ -63,7 +63,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di GKUB\n\n1. GKUB LT 1\nJUAL LENGKAP\njam operasional: 9.00-16.00\n\n2. GKUB LT 1\nJUAL LENGKAP\nJam operasional: 09.00-17.00"))
-    elif (msg=='2') or (msg=='Labtek 5') or (msg=='Labtek V') or (msg=='LABTEK 5') or (msg=='LABTEK V'):
+    elif (msg=='2') or (msg=='Labtek V') or (msg=='LABTEK V'):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di Labtek V\n\n1. LABTEK V LT 1 (DEKAT SEKRE HMIF 1)\nHANYA FOTOKOPI PRINT\nJam operasional: 09.00-15.00"))
@@ -71,7 +71,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di GKUT\n\n1. GKUT LT 1\nJUAL LENGKAP\nJam operasional: 09.00 - 15.00"))
-    elif (msg=='4') or (msg=='Labtek 8') or (msg=='Labtek VIII') or (msg=='LABTEK 8') or (msg=='LABTEK VIII'):
+    elif (msg=='4') or (msg=='Labtek VIII') or (msg=='LABTEK VIII'):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di LABTEK VIII\n\n1. LABTEK VIII LT BASEMENT\nHANYA FOTOKOPI, PRINT\nJam operasional: 09.00-15.00"))
@@ -111,7 +111,7 @@ def handle_message(event):
     else:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Mohon maaf, message belum dapat dimengerti\nSilakan masukan ANGKA atau NAMA TEMPAT sesuai pilihan dibawah ini\n\nDalam ITB\n1. GKUB\n2. Labtek 5\n3. GKUT\n4. Labtek 8\n5. Labtek biru\n6. SBM\n7. ITB Press\n8. Gedung PAU\n\nLuar ITB\n9. Cisitu\n10. Dipatiukur(DU)\n11. Tubagus Ismail (Tubis)\n\nTerimakasih sudah menggunakan layanan chatbot ini"))
+            TextSendMessage(text="Mohon maaf, message belum dapat dimengerti\nSilakan masukan ANGKA atau NAMA TEMPAT sesuai pilihan dibawah ini\n\nDalam ITB\n1. GKUB\n2. Labtek V\n3. GKUT\n4. Labtek VIII\n5. Labtek biru\n6. SBM\n7. ITB Press\n8. Gedung PAU\n\nLuar ITB\n9. Cisitu\n10. Dipatiukur(DU)\n11. Tubagus Ismail (Tubis)\n\nTerimakasih sudah menggunakan layanan chatbot ini"))
     
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
