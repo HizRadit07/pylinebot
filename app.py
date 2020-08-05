@@ -40,6 +40,15 @@ def handle_message(event):
     """ Here's all the messages will be handled and processed by the program """
     
     msg = (event.message.text).lower()
+    if (msg=='Labtek VIII') or (msg=='LABTEK VIII'):
+        line_bot_api.reply_message(
+           event.reply_token, 
+           TextSendMessage(text="List tempat fotokopi di LABTEK VIII\n\n1. LABTEK VIII LT BASEMENT\nHANYA FOTOKOPI, PRINT\nJam operasional: 09.00-15.00"))
+    elif (msg=='Labtek V') or (msg=='LABTEK V'):
+        line_bot_api.reply_message(
+            event.reply_token, 
+            TextSendMessage(text="List tempat fotokopi di Labtek V\n\n1. LABTEK V LT 1 (DEKAT SEKRE HMIF 1)\nHANYA FOTOKOPI PRINT\nJam operasional: 09.00-15.00"))
+        
     
     if 'hello' in msg:
         line_bot_api.reply_message(
@@ -63,7 +72,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di GKUB\n\n1. GKUB LT 1\nJUAL LENGKAP\njam operasional: 9.00-16.00\n\n2. GKUB LT 1\nJUAL LENGKAP\nJam operasional: 09.00-17.00"))
-    elif (msg=='2') or (msg=='Labtek V') or (msg=='LABTEK V'):
+    elif (msg=='2'):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di Labtek V\n\n1. LABTEK V LT 1 (DEKAT SEKRE HMIF 1)\nHANYA FOTOKOPI PRINT\nJam operasional: 09.00-15.00"))
@@ -71,7 +80,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di GKUT\n\n1. GKUT LT 1\nJUAL LENGKAP\nJam operasional: 09.00 - 15.00"))
-    elif (msg=='4') or (msg=='Labtek VIII') or (msg=='LABTEK VIII'):
+    elif (msg=='4'):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di LABTEK VIII\n\n1. LABTEK VIII LT BASEMENT\nHANYA FOTOKOPI, PRINT\nJam operasional: 09.00-15.00"))
