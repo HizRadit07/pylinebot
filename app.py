@@ -45,7 +45,6 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="hello user\nchatbot here"))
-            print(msg)
     elif ('apa kabar' in msg) or ('gimana kabarnya' in msg):
         line_bot_api.reply_message(
             event.reply_token, 
@@ -64,7 +63,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di GKUB\n\n1. GKUB LT 1\nJUAL LENGKAP\njam operasional: 9.00-16.00\n\n2. GKUB LT 1\nJUAL LENGKAP\nJam operasional: 09.00-17.00"))
-    elif (msg=='2'):
+    elif (msg=='2') or (msg=="labtek 5") or (msg=="labtek v"):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di Labtek V\n\n1. LABTEK V LT 1 (DEKAT SEKRE HMIF 1)\nHANYA FOTOKOPI PRINT\nJam operasional: 09.00-15.00"))
@@ -72,7 +71,7 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di GKUT\n\n1. GKUT LT 1\nJUAL LENGKAP\nJam operasional: 09.00 - 15.00"))
-    elif (msg=='4'):
+    elif (msg=='4') or (msg=="labtek 8") or (msg=="labtek viii"):
         line_bot_api.reply_message(
             event.reply_token, 
             TextSendMessage(text="List tempat fotokopi di LABTEK VIII\n\n1. LABTEK VIII LT BASEMENT\nHANYA FOTOKOPI, PRINT\nJam operasional: 09.00-15.00"))
