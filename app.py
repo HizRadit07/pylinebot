@@ -53,6 +53,10 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="test ready, greetings Dαybreak-"))
+    elif msg=="9001":
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text="ITS OVER 9000!!!!!!!!!!!!!!"))
     #easter egg functions, lol
     #dalam ITB messages
     elif ('GKUB' in msg) or ('gkub' in msg) or ('Gkub' in msg):
