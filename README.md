@@ -8,7 +8,7 @@
 4. Bintang Fajarianto (16519498): Mencari Data Fotokopi Dalam ITB, Tester
 5. Tanur Rizaldi (16519525):Membuat kata-kata pada tampilan chatbot, Tester
 6. Kemal Lutfian Cicero (16519425): Mencari Data Fotokopi Luar ITB, Tester
-7. Muhammad Fikri.. N (16519406):Mencari Data Fotokopi Dalam ITB,Tester
+7. Muhammad Fikri. N (16519406):Mencari Data Fotokopi Dalam ITB,Tester
 8. Raffi Fadhlurrahman Putra Rahiem (16519315): Membuat kata-kata pada tampilan chatbot, Tester
 9. Cahaya Naja ( 16519340):Membuat kata-kata pada tampilan chatbot, Tester
 10. Reynard Hans Prayoga (16519423): Mencari Data Fotokopi Luar ITB, Tester
